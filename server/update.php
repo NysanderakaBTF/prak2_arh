@@ -24,11 +24,6 @@
     <?php
     $mysqli = new mysqli("db", "user", "password", "appDB");
 
-
-
-
-
-
     if (isset($_POST["submit-btn"])) {
         // Update query
         $stmt = $mysqli->prepare("UPDATE users SET name = ?, surname = ? WHERE id = ?");
